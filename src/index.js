@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import HelloBar from './routes/hello-bar/pages/HelloBar';
 import HelloFoo from './routes/hello-foo/pages/HelloFoo';
 import HelloWorld from './routes/hello-world/pages/HelloWorld';
+import { SimpleGreeting } from './components/SimpleGreeting';
 import './common/styles/index.scss';
 
 const App = ({ route }) => {
