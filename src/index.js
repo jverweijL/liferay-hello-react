@@ -26,7 +26,7 @@ const App = ({ route }) => {
 		return <MotionCarousel />;
 	}
 
-	return <HelloWorld />;
+	return <div><HelloWorld /></div>;
 };
 
 class WebComponent extends HTMLElement {

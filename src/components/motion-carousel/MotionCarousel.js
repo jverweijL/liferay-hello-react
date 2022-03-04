@@ -18,7 +18,7 @@ export class MotionCarousel extends LitElement {
 
   render() {
     return html`
-      <section class="container">
+      <div class="container">
         ${this.data.map((_v, i) => {
           const count = this.data.length;
           const center = Math.trunc(count / 2);
@@ -41,7 +41,7 @@ export class MotionCarousel extends LitElement {
             ${i}
           </div>`;
         })}
-      </section>
+      </div>
     `;
   }
 
