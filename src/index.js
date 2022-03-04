@@ -16,6 +16,10 @@ const App = ({ route }) => {
 		return <HelloFoo />;
 	}
 
+	if (route === "unused") {
+		return <SimpleGreeting />;
+	}
+
 	return <HelloWorld />;
 };
 
