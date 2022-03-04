@@ -5,6 +5,7 @@ import HelloBar from './routes/hello-bar/pages/HelloBar';
 import HelloFoo from './routes/hello-foo/pages/HelloFoo';
 import HelloWorld from './routes/hello-world/pages/HelloWorld';
 import './common/styles/index.scss';
+
 import { SimpleGreeting } from './components/simple-greeting/SimpleGreeting';
 import { MotionCarousel } from './components/motion-carousel/MotionCarousel';
 
@@ -17,12 +18,12 @@ const App = ({ route }) => {
 		return <HelloFoo />;
 	}
 
-	if (route === "components") {
-		return 
-			<div>
-				<SimpleGreeting />
-				<MotionCarousel />
-			</div>;
+	if (route === "simple-greeting") {
+		return <SimpleGreeting />;
+	}
+
+	if (route === "motion-carousel") {
+		return <MotionCarousel />;
 	}
 
 	return <HelloWorld />;
